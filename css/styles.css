@@ -1,0 +1,70 @@
+:root {
+  /* Colores */
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --dark-blue: hsl(217, 44%, 22%);
+  --grayish-blue: hsl(220, 15%, 55%);
+
+  /* Fuentes */
+  --font-family-primary: "Outfit", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Globales */
+
+body {
+  background-color: var(--light-gray);
+  font-family: var(--font-family-primary);
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.center-main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+/* Qr Code */
+
+.qr-code {
+  padding: 1.6rem;
+  border-radius: 2rem;
+  background-color: var(--white);
+}
+
+.qr-code__image {
+  border-radius: 2rem;
+}
+
+.qr-code__title {
+  font-size: 2.2rem;
+  text-align: center;
+  color: var(--dark-blue);
+  margin: 2.5rem 0;
+}
+
+.qr-code__description {
+  text-align: center;
+  color: var(--grayish-blue);
+  padding: 0 1.2rem;
+  margin: 2.2rem 0;
+}
